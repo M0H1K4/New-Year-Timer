@@ -30,7 +30,7 @@ h1 {
   letter-spacing: 7.5px;
   text-transform: uppercase;
 }
-.newYear_h1{
+.newYear_h1 {
   color: #fff;
   text-align: center;
   font-size: 30px;
@@ -46,7 +46,8 @@ h1 {
   gap: 104px;
   justify-content: center;
   align-items: center;
-  margin-top: -10rem;}
+  margin-top: -10rem;
+}
 .container2 {
   display: flex;
   flex-direction: row;
@@ -56,7 +57,6 @@ h1 {
 .hours,
 .minutes,
 .seconds {
-  
   width: 148px;
   height: 150px;
   display: flex;
@@ -70,9 +70,9 @@ h1 {
 .hours_2,
 .minutes_2,
 .seconds_2 {
-  background-image: url('./assets/Rectangle\ Copy\ up.png');
+  background-image: url("./assets/Rectangle\ Copy\ up.png");
   background-repeat: no-repeat;
-  background-color: #191A23;
+  background-color: #191a23;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -102,6 +102,86 @@ p {
   letter-spacing: -2.4px;
 }
 
-.hidden{
+.hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    /* background-color: red; */
+    background-image: url('./assets/bottomMobile.png'), url('./assets/Combined\ Shape\ 2.png');
+    background-position: bottom, top;
+    background-size: 100%, 300%;
+  }
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    width: 70px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+  }
+  h2 {
+    color: #8385a9;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.959px;
+    /* text-align: center; */
+  }
+  p {
+    color: #fb5e84;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px; /* 197.222% */
+    letter-spacing: -1.08px;
+  }
+  .days_2,
+  .hours_2,
+  .minutes_2,
+  .seconds_2 {
+    background-image: url("./assets/Rectangle\ Copy\ up.png");
+    background-repeat: no-repeat;
+    background-color: #191a23;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 71px;
+    flex-shrink: 0;
+    /* background-color: red; */
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.136px;
+    text-transform: uppercase;
+    width: 327px;
+  }
+  .container {
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+  }
+  .container2 {
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    gap:16px;
+  }
 }
